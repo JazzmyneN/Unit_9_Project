@@ -1,0 +1,32 @@
+body {
+    width: 50%;
+    margin: auto;
+}
+form {
+    display: flex;
+}
+
+fieldset {
+    display: flex;
+    font-weight: bold;
+    border: 2px double black;
+    font-family: 'Source Sans Pro', sans-serif;
+    width: 50%;
+    height: 400px;
+}
+button {
+    font-size: 1.5em;
+    margin-top: 5px;
+    border: 2px double black;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+input{
+    padding: 5px;
+    border: 2px solid black;
+}
+input[type='text']::placeholder,  input[type='number']::placeholder, input[type='tel']::placeholder{
+    color: black;
+    font-weight: bold;
+    font-size: 1.25em;
+    padding: 5px;
+}

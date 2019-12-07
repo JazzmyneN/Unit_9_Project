@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Millennium Computers</title>
+    <link href = "mc_reset.css" rel = "stylesheet">
+    <link href = "mc_styles.css" rel = "stylesheet">
+    <link href = "mc_forms.css" rel = "stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <script src = "mc_script.js"></script>
+</head>
+<body>
+    <form name = "cForm" method = "post" action = "http://www.mill_computers.com/orders/process.cgi">
+        <fieldset id = "customerInfo">
+            <legend>Customer Information</legend>
+            <input required id = "fName" type = "text" placeholder="First Name">
+            <input required id = "lName" type = "text" placeholder="Last Name"> 
+            <input required id = "street" type = "text" placeholder="Street">  
+            <input required id = "city" type = "text" placeholder="City">
+            <input required id = "state" type = "text" placeholder="State">
+            <input required id = "zip" type = "number" placeholder="Zip/Postal Code">
+            <input required id = "phone" type = "tel" placeholder="Phone Number">
+        </fieldset>
+        <fieldset>
+            <legend>Computer Specifications</legend>
+
+            <label for = "pSpeed">Processor Speed</label>
+            <select id = "pSpeed">
+                <option  value = "3.2">3.2 GHz</option>
+                <option  value = "4.0">4.0 GHz</option>
+                <option  value = "5.2">5.2 GHz</option>
+            </select>
+
+            <label for = "mem">Memory</label>
+            <select id = "mem">
+                <option  value = "1">1 GB</option>
+                <option  value = "2">2 GB</option>
+                <option  value = "4">4 GB</option>
+                <option  value = "8">8 GB</option>
+            </select>
+
+            <label for = "monitor">Monitor Size</label>
+            <select id = "monitor">
+                <option  value = "15">15"</option>
+                <option  value = "17">17"</option>
+                <option  value = "19">19"</option>
+                <option  value = "21">21"</option>
+            </select>
+
+            <label for = "hd">Hard Drive</label>
+            <select id = "hd">
+                <option  value = "240gb">240 GB</option>
+                <option  value = "500gb">500 GB</option>
+                <option  value = "750gb">750 GB</option>
+                <option  value = "1tb">1 TB</option>
+            </select>
+
+            <label for = "dvd">DVD Burner</label>
+            <input id = "dvd" type = "checkbox">
+
+            <label for = "tuner">Tuner Card</label>
+            <input id = "tuner" type = "checkbox">
+
+            <label for = "mcard">Media Card Reader</label>
+            <input id = "mcard" type = "checkbox">
+
+            <label for = "warranty">Would you like a 24-month extended warranty?</label>
+            <input checked id = "warranty" type = "checkbox">
+        </fieldset>
+        
+    </form>
+    <button type = "submit">Send Order</button>
+    <button type = "reset">Cancel Order</button>
+    <button type = "command">Contact Me</button>
+</body>
+</html>
